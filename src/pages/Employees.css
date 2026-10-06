@@ -1,0 +1,151 @@
+/* Page */
+
+.employees {
+    padding: 20px;
+}
+
+.employees h1 {
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+/* ===========================
+   Top Bar
+=========================== */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.top-bar button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight: 600;
+}
+.top-bar button:hover {
+    background: #1d4ed8;
+}
+/* Search Box */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: white;
+    padding: 10px 15px;
+
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+   width:300px;}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    padding:10px;
+}
+
+/* Dropdown */
+
+.top-bar select {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}
+
+/* Button */
+
+.top-bar button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #2563eb;
+    color: white;
+
+    border: none;
+    padding: 10px 18px;
+
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.top-bar button:hover {
+    background: #1d4ed8;
+}
+
+/* Horizontal Line */
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 768px) {
+
+    .top-bar {
+        justify-content: flex-start;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .top-bar select {
+        flex: 1;
+    }
+
+    .top-bar button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 576px) {
+
+    .employees {
+        padding: 15px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box,
+    .top-bar select,
+    .top-bar button {
+        width: 100%;
+    }
+
+    .employees h1 {
+        font-size: 24px;
+    }
+}

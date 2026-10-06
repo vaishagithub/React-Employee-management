@@ -1,0 +1,19 @@
+.toolbar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.toolbar select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.employee-management {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

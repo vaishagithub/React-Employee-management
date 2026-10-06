@@ -1,0 +1,78 @@
+.navbar {
+    height: 70px;
+    background-color: azure;
+     border-bottom: 1px solid #ddd;
+   padding: 0 20px;
+   width: 100%;
+   display:flex;
+   align-items: center;
+}
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width:100%;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #2563eb;
+}
+/* ---------------- Tablet ---------------- */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-left h2 {
+        font-size: 20px;
+    }
+
+    .icon {
+        font-size: 22px;
+    }
+
+    .nav-right {
+        gap: 12px;
+    }
+}
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .nav-left h2 {
+        font-size: 16px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .nav-right span {
+        display: none;   /* Hide "Admin" text on mobile */
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+}
+
+      

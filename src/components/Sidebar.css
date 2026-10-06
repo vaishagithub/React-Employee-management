@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.sidebar h2{
+    padding:18px 20px;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    cursor:pointer;
+  outline: none;
+}
+.sidebar{
+    background-color: aqua;
+    width: 250px;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+   /* flex-shrink: 0; */
+}
+.sidebar a{
+    text-decoration: none;
+    color:inherit;
+}
+.sidebar a.active{
+    background-color: #2563eb;
+    color:white;
+    border-radius: 8px;
+}
+.sidebar h2:hover {
+    background-color: #0099cc;
+    color: white;
+}
+.logout{
+    margin-top:auto;
+    padding:18px 20px;
+}
+.menu{
+    flex:1
+}
+@media (max-width:768px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar h2 {
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar h2 {
+        font-size: 16px;
+        padding: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .sidebar {
+        width: 180px;
+       min-height: 100vh;/*min-height is usually better because it can grow if needed.*/
+    }
+
+    .sidebar h2 {
+        font-size: 15px;
+        padding: 15px;
+        justify-content: flex-start;
+    }
+
+    .logout {
+        margin-top: auto;
+        padding: 15px;
+    }
+}
+    
+    

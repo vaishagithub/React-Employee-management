@@ -1,0 +1,111 @@
+src
+│
+├── assets
+│   ├── images
+│   └── icons
+│
+├── components
+│   ├── Sidebar.tsx
+│   ├── Navbar.tsx
+│   ├── EmployeeCard.tsx
+│   ├── EmployeeTable.tsx
+│   ├── EmployeeForm.tsx
+│   ├── SearchBar.tsx
+│   ├── Filter.tsx
+│   ├── Statistics.tsx
+│   ├── Pagination.tsx
+│   ├── Loader.tsx
+│   └── Modal.tsx
+│
+├── pages
+│   ├── Dashboard.tsx
+│   ├── Employees.tsx
+│   ├── EmployeeDetails.tsx
+│   ├── AddEmployee.tsx
+│   └── EditEmployee.tsx
+│
+├── services
+│   └── employeeApi.ts
+│
+├── hooks
+│   └── useEmployees.ts
+│
+├── types
+│   └── Employee.ts
+│
+├── utils
+│   └── helpers.ts
+│
+├── App.tsx
+├── main.tsx
+└── index.css
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------
+ Employee Management
+
+ Dashboard | Employees | Settings
+
+---------------------------------------------------------
+ Total Employees    Active    Departments    New Hires
+---------------------------------------------------------
+
+ Search 🔍                 + Add Employee
+
+---------------------------------------------------------
+ Photo | Name | Email | Department | Status | Actions
+---------------------------------------------------------
+ 👤 Emily | emily@email.com | HR | Active | 👁 ✏️ 🗑
+ 👤 John  | john@email.com  | IT | Active | 👁 ✏️ 🗑
+---------------------------------------------------------
+
+            Previous   1 2 3   Next
+---------------------------------------------------------
+
+import {
+  FaUsers,
+  FaSearch,
+  FaEdit,
+  FaTrash,
+  FaEye,
+  FaPlus,
+  FaHome,
+  FaCog,
+  FaBars
+} from "react-icons/fa";
+
+MainLayout
+│
+├── Sidebar   ✅ Always Visible
+├── Navbar    ✅ Always Visible
+│
+└── Outlet
+     │
+     ├── Dashboard
+     ├── Employees
+     ├── Employee Details
+     ├── Add Employee
+     └── Edit Employee
+
+     +----------------+------------------------------+
+| Sidebar        | Navbar                       |
+|                |------------------------------|
+| Dashboard      | Dashboard Page               |
+| Employees      |                              |
+| Settings       |                              |
++----------------+------------------------------+
+
++----------------+------------------------------+
+| Sidebar        | Navbar                       |
+|                |------------------------------|
+| Dashboard      | Employee Table               |
+| Employees      | Search                       |
+| Settings       | Add Employee                 |
++----------------+------------------------------+
